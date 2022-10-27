@@ -158,6 +158,29 @@ img {
     padding: 0px 1.2rem;
 }
 
+button.menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1.8rem;
+    height: 1.5rem;
+    border: 0;
+    background: transparent;
+    gap: .30rem;
+}
+
+button > div {
+    background: var(--white);
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.youtube-icon {
+    margin-left: 1.4rem;
+}
+
 .yt-icon {
     font-size: 1.4rem;
     margin-right: .15rem;
