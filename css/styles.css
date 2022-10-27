@@ -202,7 +202,8 @@ input[type=text] {
     /* display: none; */
 }
 
-.input-icons i:last-child {
+.input-icons button[type="submit"] {
+    cursor: pointer;
     border: 2px solid var(--dark-grey);
     position: absolute;
     right: -52px;
@@ -213,7 +214,6 @@ input[type=text] {
     background-color: var(--dark-grey);
     height: 2.5rem;
     color: var(--white);
-    /* display: none; */
 }
 
 .search-voice {

@@ -1,6 +1,7 @@
 "use strict";
 
 // Variables
+const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search_bar');
 const cancelIcon = document.querySelector('.cancel-icon');
 
@@ -20,5 +21,14 @@ const showIconInSearchField = () => {
     
 }
 
+//* Submit formulario de búsqueda
+const submitSearchForm = ( evt ) => {
+    evt.preventDefault();
+    console.log('submit...');
+    searchInput.value = '';
+}
+
 // Eventos
 searchInput.addEventListener('input', showIconInSearchField);
+
+searchForm.addEventListener('submit', submitSearchForm);
