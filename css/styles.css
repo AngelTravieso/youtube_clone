@@ -299,6 +299,11 @@ aside {
     flex: 0 0 calc(3%); 
 }
 
+aside .menu:active {
+    background-color: var(--light-grey);
+    border-radius: 1rem;
+}
+
 .menu-item {
     cursor: pointer;
     padding: 1rem .2rem;
