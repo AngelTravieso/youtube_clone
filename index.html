@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,30 +16,46 @@
 </head>
 <body>
 
-    <header>
-        <nav class="d-flex justify-content-between align-items-center">
-            <div>
-                <p class="text-white">
-                    YOUTUBE
-                </p>
+    <!--  d-flex w-100 align-items-center -->
+    <header class="header bg-dark">
+        <nav class="navbar d-flex justify-content-between align-items-center">
+            <!-- Icono YouTube -->
+            <div class="youtube-icon d-flex align-items-center cursor-pointer">
+                <!-- <a href="/"> -->
+                    <div class="yt-icon">
+                        <i class="fab fa-youtube text-danger"></i>
+                    </div>
+                    <div class="yt-letter">
+                        <p class="text-white fw-bold-500">
+                            YouTube
+                        </p>
+                    </div>
+                <!-- </a> -->
             </div>
-            <div>
-                <div class="input-icons">
-                    <input type="text" placeholder="Buscar" class="input-field search_bar" />
-                    <i class="fa-solid fa-xmark icon d-none"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- Input de búsqueda -->
+            <div class="search">
+                <div class="d-flex justify-content-around align-items-center search-fields">
+                    <div class="input-icons">
+                        <input type="text" placeholder="Buscar" class="input-field search_bar" />
+                        <i class="fa-solid fa-xmark icon d-none"></i> <!-- Icono interno del input -->
+                        <i class="fa-solid fa-magnifying-glass"></i> <!-- Icono extenerno del input -->
+                    </div>
+                    <!-- Icono microfono -->
+                    <!-- <div class="search-voice"></div> -->
                 </div>
             </div>
-            <div>
+            <!-- Botones de acción -->
+            <div class="icons-action">
                 <ul class="d-flex align-items-center">
                     <li>
-                        <i class="fa-solid fa-camera text-white"></i>
+                        <i class="fa-solid fa-camera text-white cursor-pointer"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-bell text-white"></i>
+                        <i class="fa-solid fa-bell text-white cursor-pointer"></i>
+                        <span class="notification-badge"></span>
                     </li>
                     <li>
-                        <div class="circle_avatar">
+                        <div class="circle_avatar cursor-pointer">
                             
                         </div>
                     </li>

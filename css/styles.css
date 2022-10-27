@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 :root {
+    --dark-header: #202020;
     --dark: #181818;
     --dark-input: #121212;
     --white: #fff;
     --dark-grey: #323232;
+    --youtube-red: #FF3D3D;
     --roboto-font: 'Roboto', sans-serif;
 }
 
 html {
     box-sizing: border-box;
+    /* font-size: 62.5%; */
 }
 
 *, *:before, *::after {
@@ -17,23 +20,64 @@ html {
 }
 
 body {
+    /* font-size: 16px;
+    font-size: 1.6rem; 
+    line-height: 1.5; */
     background-color: var(--dark);
     font-family: var(--roboto-font);
+    /* max-width: 98%; */
+    margin: 0 auto;
 }
 
-/* Generales */
+/** Generales **/
 ul {
     list-style: none;
     padding: 0;
 }
 
-/* Utils */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/** Utils **/
+.bg-dark {
+    background-color: var(--dark-header);
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
 .text-dark {
     color: var(--dark);
 }
 
 .text-white {
     color: var(--white);
+}
+
+.text-danger {
+    color: var(--youtube-red);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-bold-300 {
+    font-weight: 300;
+}
+
+.fw-bold-400 {
+    font-weight: 400;
+}
+
+.fw-bold-500 {
+    font-weight: 500;
 }
 
 .d-flex {
@@ -44,6 +88,22 @@ ul {
     justify-content: space-between;
 }
 
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -52,11 +112,79 @@ ul {
     display: none;
 }
 
+.d-block {
+    display: block;
+}
 
-/* Header */
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex-1 {
+    flex-grow: 1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+/** Header **/
+/* .header {
+    height: 3.5rem;
+} */
+
+.navbar {
+    padding: 0px 1.2rem;
+}
+
+.yt-icon {
+    font-size: 1.4rem;
+}
+
+.yt-letter p {
+    letter-spacing: -3px;
+    font-size: 1.4rem;
+}
+
+/* search */
+input[type=text] {
+    position: relative;
+    padding: .5rem;
+    margin: .5rem;
+    height: 2.5rem;
+    border: 1.5px solid var(--dark-grey);
+    background-color: var(--dark-input);
+    color: var(--white);
+    width: 32rem;
+}
+
+.search-fields {
+    width: 40rem;
+}
+
 .input-icons {
     position: relative;
-    width: 100%;
 }
 
 .input-icons i:hover {
@@ -65,8 +193,8 @@ ul {
 
 .input-icons i {
     position: absolute;
-    right: 0;
     top: 8px;
+    right: 0;
     padding: 10px 0;
     min-width: 40px;
     color: var(--white);
@@ -74,8 +202,9 @@ ul {
 }
 
 .input-icons i:last-child {
+    border: 2px solid var(--dark-grey);
     position: absolute;
-    right: -54px;
+    right: -52px;
     top: 8px;
     padding: 10px;
     min-width: 60px;
@@ -86,23 +215,50 @@ ul {
     /* display: none; */
 }
 
-input[type=text] {
+.search-voice {
     position: relative;
-    padding: .5rem;
-    margin: .5rem;
+    left: 1.2rem;
+    background-color: rgb(192, 167, 167);
+    width: 2.5rem;
     height: 2.5rem;
-    border: 1.5px solid var(--dark-grey);
-    background-color: var(--dark-input);
-    color: var(--white);
-    width: 25rem;
+    border-radius: 1.5rem;
 }
 
+.search-voice::after {
+    content: "\f130";
+    font-family: 'FontAwesome';
+    color: var(--white);
+}
 
+.search-voice i {
+    position: absolute;
+    padding-left: 3rem;
+}
 
+/* Botones de accion menú */
+.icons-action i {
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
 
+.icons-action i:nth-last-child() {
+    position: relative;
+}
+
+/* Icono notificacion
+.notification-badge {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    border-radius: 1.2rem;
+    width: 1.6rem;
+    height: 1.3rem;
+    background-color: var(--youtube-red);
+} */
 
 /* Avatar */
 .circle_avatar {
+    margin-left: .5rem;
     background-color: var(--white);
     height: 2rem;
     width: 2rem;
