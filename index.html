@@ -16,68 +16,106 @@
 </head>
 <body>
 
-    <!--  d-flex w-100 align-items-center -->
-    <header class="header bg-dark">
-        <nav class="navbar d-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-between align-items-center">
-                <button class="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-    
-                <!-- Icono YouTube -->
-                <div class="youtube-icon d-flex align-items-center cursor-pointer">
-                    <a href="/" class="d-flex align-items-center">
-                        <div class="yt-icon">
-                            <img src="img/favicon_32x32.png" alt="">
-                        </div>
-                        <div class="yt-letter">
-                            <p class="text-white fw-bold-500">
-                                YouTube
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Toggle menu -->
-          
-            <!-- Input de búsqueda -->
-            <div class="search">
-                <div class="d-flex justify-content-around align-items-center search-fields">
-                    <form class="search-form">
-                        <div class="input-icons">
-                            <input type="text" placeholder="Buscar" class="input-field search_bar" />
-                            <!-- Icono interno del input -->
-                            <i class="fa-solid fa-xmark icon cancel-icon"></i>
-                            <!-- Boton de lupa -->
-                            <button type="submit" value="" class="fa-solid fa-magnifying-glass" />
-                        </div>
-                    </form>
-                    <!-- Icono microfono -->
-                    <!-- <div class="search-voice"></div> -->
-                </div>
-            </div>
-            <!-- Botones de acción -->
-            <div class="icons-action">
-                <ul class="d-flex align-items-center">
+
+    <div class="navbar-wrapper d-flex">
+        <!-- Menu -->
+        <aside class="d-flex flex-column align-items-center">
+            <button class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+
+            <div class="toggle-buttons">
+                <ul>
                     <li>
-                        <i class="fa-solid fa-camera text-white cursor-pointer"></i>
+                        <div class="menu-item d-flex flex-column align-items-center align-content-center text-center">
+                            <i class="fa-solid fa-house text-white"></i>
+                            <p class="m-0 text-white fs-small">Principal</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="fa-solid fa-bell text-white cursor-pointer"></i>
-                        <span class="notification-badge"></span>
+                        <div class="menu-item d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-video text-white"></i>
+                            <p class="m-0 text-white fs-small">Shorts</p>
+                        </div>
                     </li>
                     <li>
-                        <div class="circle_avatar cursor-pointer">
-                            
+                        <div class="menu-item d-flex flex-column align-items-center">
+                            <i class="fa-solid fa-play text-white"></i>
+                            <p class="m-0 text-white fs-small">Suscripciones</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item d-flex flex-column align-items-center">
+                            <i class="fa-regular fa-circle-play text-white"></i>
+                            <p class="m-0 text-white fs-small">Biblioteca</p>
                         </div>
                     </li>
                 </ul>
             </div>
-            
-        </nav>
-    </header>
+
+        </aside>
+        
+        <!-- Navbar -->
+        <header class="header bg-dark">
+            <nav class="navbar d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+               
+        
+                    <!-- Icono YouTube -->
+                    <div class="youtube-icon d-flex align-items-center cursor-pointer">
+                        <a href="/" class="d-flex align-items-center">
+                            <div class="yt-icon">
+                                <img src="img/favicon_32x32.png" alt="">
+                            </div>
+                            <div class="yt-letter">
+                                <p class="text-white fw-bold-500">
+                                    YouTube
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Toggle menu -->
+              
+                <!-- Input de búsqueda -->
+                <div class="search">
+                    <div class="d-flex justify-content-around align-items-center search-fields">
+                        <form class="search-form">
+                            <div class="input-icons">
+                                <input type="text" placeholder="Buscar" class="input-field search_bar" />
+                                <!-- Icono interno del input -->
+                                <i class="fa-solid fa-xmark icon cancel-icon"></i>
+                                <!-- Boton de lupa -->
+                                <button type="submit" value="" class="fa-solid fa-magnifying-glass" />
+                            </div>
+                        </form>
+                        <!-- Icono microfono -->
+                        <!-- <div class="search-voice"></div> -->
+                    </div>
+                </div>
+                <!-- Botones de acción -->
+                <div class="icons-action">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <i class="fa-solid fa-camera text-white cursor-pointer"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bell text-white cursor-pointer"></i>
+                            <span class="notification-badge"></span>
+                        </li>
+                        <li>
+                            <div class="circle_avatar cursor-pointer">
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+   
     
     <script src="js/app.js"></script>
 </body>
