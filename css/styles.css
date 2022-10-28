@@ -272,22 +272,30 @@ input[type=text] {
 .search-voice {
     position: relative;
     left: 1.2rem;
-    background-color: rgb(192, 167, 167);
+    background-color: var(--dark);
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color .2s ease;
 }
+
+.search-voice:active {
+    background-color: var(--light-grey);
+}
+
 
 .search-voice::after {
     content: "\f130";
+    position: absolute;
+    top: 10px;
+    left: 13px;
     font-family: 'FontAwesome';
     color: var(--white);
+    text-align: center;
 }
 
-.search-voice i {
-    position: absolute;
-    padding-left: 3rem;
-}
 
 /* Botones de accion menú */
 .icons-action i {
