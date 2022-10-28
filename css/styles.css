@@ -175,7 +175,7 @@ img {
 .header {
     width: 50%;
     height: 4rem;
-    flex: 0 0 calc(96.5%); 
+    flex: 0 0 calc(100%); 
 }
 
 .navbar {
@@ -199,6 +199,11 @@ button > div {
     height: 2px;
     width: 100%;
     border-radius: 5px;
+}
+
+.youtube-icon {
+    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .yt-icon {
@@ -291,11 +296,13 @@ input[type=text] {
 
 
 /** Menu Aside **/
-aside {
-    width: 4rem;
+.side-menu {
     height: 100vh;
+}
+
+aside {
     background-color: var(--dark-header);
-    padding: 1.8rem;
+    flex: 1;
 }
 
 aside .menu:active {
@@ -303,13 +310,14 @@ aside .menu:active {
     border-radius: 1rem;
 }
 
-aside.litle-menu {
-    flex: 0 0 calc(3%);
+.litle-menu {
+    width: 4rem;
 }
 
-aside.expanded {
-    flex: 0 0 calc(10%);
+.expanded {
+    width: 14rem;
 }
+
 
 .menu-item {
     cursor: pointer;

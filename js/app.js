@@ -5,7 +5,8 @@ const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search_bar');
 const cancelIcon = document.querySelector('.cancel-icon');
 const aside = document.querySelector('aside');
-const toggleMenuBtn = document.querySelector('aside .menu');
+const toggleMenuBtn = document.querySelector('.menu');
+const menuItem = document.querySelectorAll('.menu-item');
 
 
 cancelIcon.style.display = 'none';
@@ -26,6 +27,9 @@ const showIconInSearchField = () => {
 //* Expandir menú
 const expandMenu = () => {
     aside.classList.toggle('expanded');
+    menuItem.forEach(item => {
+        item.style.height = '4rem';
+    });
 }
 
 //* Submit formulario de búsqueda
