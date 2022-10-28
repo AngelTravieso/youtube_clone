@@ -4,6 +4,8 @@
 const searchForm = document.querySelector('.search-form');
 const searchInput = document.querySelector('.search_bar');
 const cancelIcon = document.querySelector('.cancel-icon');
+const aside = document.querySelector('aside');
+const toggleMenuBtn = document.querySelector('aside .menu');
 
 
 cancelIcon.style.display = 'none';
@@ -21,6 +23,11 @@ const showIconInSearchField = () => {
     
 }
 
+//* Expandir menú
+const expandMenu = () => {
+    aside.classList.toggle('expanded');
+}
+
 //* Submit formulario de búsqueda
 const submitSearchForm = ( evt ) => {
     evt.preventDefault();
@@ -32,3 +39,5 @@ const submitSearchForm = ( evt ) => {
 searchInput.addEventListener('input', showIconInSearchField);
 
 searchForm.addEventListener('submit', submitSearchForm);
+
+toggleMenuBtn.addEventListener('click', expandMenu);

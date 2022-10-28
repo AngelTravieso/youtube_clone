@@ -296,12 +296,19 @@ aside {
     height: 100vh;
     background-color: var(--dark-header);
     padding: 1.8rem;
-    flex: 0 0 calc(3%); 
 }
 
 aside .menu:active {
     background-color: var(--light-grey);
     border-radius: 1rem;
+}
+
+aside.litle-menu {
+    flex: 0 0 calc(3%);
+}
+
+aside.expanded {
+    flex: 0 0 calc(10%);
 }
 
 .menu-item {
