@@ -178,6 +178,11 @@ img {
     flex: 0 0 calc(100%); 
 }
 
+.header .menu:active {
+    background-color: var(--light-grey);
+    border-radius: 1rem;
+}
+
 .navbar {
     padding: 0px 1.2rem;
 }
@@ -303,11 +308,6 @@ input[type=text] {
 aside {
     background-color: var(--dark-header);
     flex: 1;
-}
-
-aside .menu:active {
-    background-color: var(--light-grey);
-    border-radius: 1rem;
 }
 
 .litle-menu {
